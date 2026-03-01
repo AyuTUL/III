@@ -1,4 +1,4 @@
-// Lab 1.10: Implementation of postfix to prefix expression conversion
+// Lab 1.9: Implementation of postfix to infix expression conversion
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -42,7 +42,8 @@ public:
 	{
 		if (isEmpty())
 		{
-			cout << "Stack underflow\n";
+			cout << endl
+				 << "Stack underflow" << endl;
 			return "";
 		}
 		else
@@ -57,7 +58,7 @@ string newString(Stack &operand, char op)
 {
 	string op1 = operand.pop();
 	string op2 = operand.pop();
-	return op + op2 + op1;
+	return '(' + op2 + op + op1 + ')';
 }
 string convert(string exp)
 {
@@ -83,9 +84,6 @@ int main()
 	string postfix;
 	cout << "Enter postfix expression : ";
 	getline(cin, postfix);
-	string prefix = convert(postfix);
-	cout << "Prefix : ";
-	for (int i = 0; i < prefix.length(); i++)
-		cout << prefix[i] << ' ';
+	cout << "Infix : " << convert(postfix);
 	return 0;
 }
