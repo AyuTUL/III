@@ -1,4 +1,5 @@
 // Lab 9: Implementation of Bresenham line drawing algorithm using OpenGL
+// g++ 9bresenhamOpenGL.cpp -o 9bresenhamOpenGL -lglfw3 -lopengl32 -lgdi32 -luser32 && .\9bresenhamOpenGL
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>

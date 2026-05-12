@@ -1,4 +1,5 @@
 // Lab 5: Implementation of basic 2D transformations: translation, scaling & rotation
+// g++ 5transformation2D.cpp -o 5transformation2D -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 && .\\5transformation2D
 #include <iostream>
 #include <conio.h>
 #include <graphics.h>

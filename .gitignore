@@ -31,3 +31,6 @@
 *.out
 *.app
 *.bak
+
+# VS Code machine-specific settings
+.vscode/settings.json

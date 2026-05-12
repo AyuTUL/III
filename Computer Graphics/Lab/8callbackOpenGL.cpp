@@ -1,4 +1,5 @@
 // Lab 8: Implementation of 2D-geometric primitive drawing using OpenGL
+// g++ 8callbackOpenGL.cpp -o 8callbackOpenGL -lglfw3 -lopengl32 -lgdi32 -luser32 && .\8callbackOpenGL
 #include <GLFW/glfw3.h>
 #include <GL/gl.h> // Include the OpenGL header
 #include <iostream>

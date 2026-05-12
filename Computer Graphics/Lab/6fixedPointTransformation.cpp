@@ -1,4 +1,5 @@
 // Lab 6: Implementation of fixed point 2D transformations: scaling & rotation
+// g++ 6fixedPointTransformation.cpp -o 6fixedPointTransformation -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 && .\\6fixedPointTransformation
 #include <iostream>
 #include <conio.h>
 #include <graphics.h>
